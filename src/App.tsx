@@ -267,12 +267,12 @@ export default function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full">
-              <a href="#" className="flex-1 flex flex-col items-center justify-center p-6 bg-purple-900/10 rounded-2xl border border-purple-500/20 hover:border-fuchsia-400 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] transition-all duration-300 group">
+              <a href="https://www.instagram.com/vida_abundante_uruguay" target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center p-6 bg-purple-900/10 rounded-2xl border border-purple-500/20 hover:border-fuchsia-400 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] transition-all duration-300 group">
                 <Instagram className="w-8 h-8 mb-3 text-white/70 group-hover:text-fuchsia-400 transition-colors drop-shadow-md" />
                 <span className="text-sm font-medium">@vida_abundante_uruguay</span>
               </a>
               
-              <a href="#" className="flex-1 flex flex-col items-center justify-center p-6 bg-purple-900/10 rounded-2xl border border-purple-500/20 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group">
+              <a href="https://www.facebook.com/VidaUruguay" target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center p-6 bg-purple-900/10 rounded-2xl border border-purple-500/20 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group">
                 <Facebook className="w-8 h-8 mb-3 text-white/70 group-hover:text-cyan-400 transition-colors drop-shadow-md" />
                 <span className="text-sm font-medium">VidaUruguay</span>
               </a>
