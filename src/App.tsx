@@ -1,6 +1,13 @@
 import { motion } from 'motion/react';
 import { MapPin, Instagram, Facebook, Globe, Calendar, Clock, Music, Mic, Coffee, MonitorPlay } from 'lucide-react';
 
+import bandaImg from './assets/banda.jpg';
+import gabrielImg from './assets/gabriel.jpg';
+import santiagoImg from './assets/santiago.jpg';
+import digitalChileImg from './assets/digital_chile.jpeg';
+import logoEventoImg from './assets/logo_evento.png';
+import logoIglesiaImg from './assets/logo_iglesia.jpeg';
+
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -12,8 +19,8 @@ const timelineData = [
     title: "Apertura",
     icon: <Music className="w-5 h-5 text-cyan-glow" />,
     details: [
-      { type: "band", name: "Banda \"Una Adoración\"", photo: "/banda.jpg" },
-      { type: "speaker", name: "1er Mensaje: Gabriel Cabrera", photo: "/gabriel.jpg" }
+      { type: "band", name: "Banda \"Una Adoración\"", photo: bandaImg },
+      { type: "speaker", name: "1er Mensaje: Gabriel Cabrera", photo: gabrielImg }
     ]
   },
   {
@@ -22,7 +29,7 @@ const timelineData = [
     icon: <Coffee className="w-5 h-5 text-violet-glow" />,
     details: [
       { type: "break", name: "Coffee Break / Networking", photo: null },
-      { type: "speaker", name: "Santiago Tejera", photo: "/santiago.jpg" }
+      { type: "speaker", name: "Santiago Tejera", photo: santiagoImg }
     ]
   },
   {
@@ -30,7 +37,7 @@ const timelineData = [
     title: "Especial",
     icon: <MonitorPlay className="w-5 h-5 text-cyan-glow" />,
     details: [
-      { type: "event", name: "Presentación Digital Chile", photo: "/digital_chile.jpeg" }
+      { type: "event", name: "Presentación Digital Chile", photo: digitalChileImg }
     ]
   },
   {
@@ -129,7 +136,7 @@ export default function App() {
           <div className="relative w-full max-w-3xl px-4 md:px-0 mx-auto">
              <div className="absolute inset-0 bg-gradient-to-b from-fuchsia-600/10 to-transparent blur-3xl rounded-full scale-110 pointer-events-none" />
              <img 
-               src="/logo_evento.png" 
+               src={logoEventoImg} 
                alt="DOPAMINA Logo Central" 
                className="relative w-full h-auto drop-shadow-[0_0_40px_rgba(139,92,246,0.4)] mix-blend-screen scale-110 md:scale-100"
                style={{ WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)' }}
@@ -281,7 +288,7 @@ export default function App() {
         {/* FOOTER */}
         <footer className="pt-12 border-t border-purple-500/20 text-center text-white/40 text-sm flex flex-col items-center justify-center space-y-6">
           <div className="bg-white p-4 rounded-xl inline-block shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-            <img src="/logo_iglesia.jpeg" alt="Vida Abundante Uruguay" className="h-16 w-auto object-contain" />
+            <img src={logoIglesiaImg} alt="Vida Abundante Uruguay" className="h-16 w-auto object-contain" />
           </div>
           <p>© {new Date().getFullYear()} DOPAMINA. Todos los derechos reservados.</p>
         </footer>
